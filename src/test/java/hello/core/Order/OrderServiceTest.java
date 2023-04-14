@@ -1,10 +1,8 @@
 package hello.core.Order;
 
 import hello.core.AppConfig;
-import hello.core.member.Grade;
-import hello.core.member.Member;
-import hello.core.member.MemberService;
-import hello.core.member.MemberServiceImpl;
+import hello.core.discount.FixDiscountPolicy;
+import hello.core.member.*;
 import hello.core.order.Order;
 import hello.core.order.OrderService;
 import hello.core.order.OrderServiceImpl;
@@ -34,4 +32,9 @@ public class OrderServiceTest {
     Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
 
   }
+
+
+
+
+
 }
